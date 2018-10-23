@@ -1,0 +1,8 @@
+hash: 94320dbb37341e3624adc66b1b769a4cadc7c7be44c90db0c4989588c351a77c
+updated: 2018-10-23T10:37:44.276106+08:00
+imports:
+- name: github.com/liuzheng/marantz-avr
+  version: 3b57007f101f75b27248c7df20c00548957c44db
+  subpackages:
+  - api
+testImports: []
