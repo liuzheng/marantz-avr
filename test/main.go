@@ -1,8 +1,8 @@
 package main
 
 import (
-	"github.com/liuzheng/marantz-avr"
 	"fmt"
+	"github.com/liuzheng/marantz-avr"
 )
 
 func main() {

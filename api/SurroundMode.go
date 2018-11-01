@@ -1,8 +1,8 @@
 package api
 
-func (avr *AVReceiverStruct) getCurrentSurroundMode() string {
-	return ""
+func (avr *AVReceiverStruct) getSurroundMode() string {
+	 return avr.getStateFor("surroundMode")
 }
 func (avr *AVReceiverStruct) SyncCurrentSurroundMode() {
-	avr.SurroundMode = avr.getCurrentSurroundMode()
+	avr.SurroundMode = avr.getSurroundMode()
 }

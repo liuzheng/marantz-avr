@@ -21,11 +21,10 @@ func (avr *AVReceiverStruct) getState() bool {
 	return false
 }
 func (avr *AVReceiverStruct) getStateFor(name string) bool {
-	avr.getState()
-	return false
+	return avr.getState()
 }
 
-func (avr *AVReceiverStruct) sendCommand(cmd string) {
+func (avr *AVReceiverStruct) sendCommand(cmd string) (string, error) {
 
 	resp, err := http.Post(
 		"http://"+avr.IpAdderss+"/MainZone"+POST_URL,
@@ -39,6 +38,5 @@ func (avr *AVReceiverStruct) sendCommand(cmd string) {
 	if err != nil {
 		// handle error
 	}
-
-	fmt.Println(string(body))
+	return string(body), err
 }
